@@ -1,0 +1,63 @@
+/*图标*/
+.icon{ 
+	display: inline-block; 
+	background-image: url(../images/icons.png); 
+	background-repeat: no-repeat; 
+	vertical-align: middle;
+	margin-right: 5px;
+}
+
+.icon-dialog { width: 28px; height: 24px; background-position: -28px 0; }
+.icon-book { width: 28px; height: 24px; background-position: -28px -28px; }
+.icon-note { width: 28px; height: 24px; background-position: -28px -56px; }
+.icon-upload { width: 28px; height: 24px; background-position: -28px -87px; }
+.icon-panel { width: 28px; height: 24px; background-position: -28px -115px; }
+.icon-refresh { width: 28px; height: 24px; background-position: -28px -143px; }
+.icon-gift { width: 28px; height: 24px; background-position: -28px -173px; }
+.icon-net { width: 28px; height: 24px; background-position: -28px -204px; }
+.icon-heart { width: 28px; height: 24px; background-position: 0 -28px; }
+.icon-pic { width: 28px; height: 24px; background-position: -90px -28px; }
+.icon-tool { width: 28px; height: 24px; background-position: -90px -58px; }
+.icon-man { width: 28px; height: 24px; background-position: -90px -86px; }
+.icon-setting { width: 28px; height: 24px; background-position: -90px -116px; }
+.icon-done { width: 28px; height: 24px; background-position: 0 -28px; }
+
+.active .icon-dialog { background-position: 0 0; }
+.active .icon-book { background-position: 0 -28px; }
+.active .icon-note { background-position: 0 -56px; }
+.active .icon-upload { background-position: 0 -87px; }
+.active .icon-panel { background-position: 0 -115px; }
+.active .icon-refresh { background-position: 0 -143px; }
+.active .icon-gift { background-position: 0 -173px; }
+.active .icon-net { background-position: 0 -204px; }
+.active .icon-heart { background-position: -60px 0; }
+.active .icon-pic { background-position: -60px -28px; }
+.active .icon-tool { background-position: -60px -58px; }
+.active .icon-man { background-position: -60px -86px; }
+.active .icon-setting { background-position: -60px -116px; }
+.active .icon-done { background-position: -60px -143px; }
+
+.icon-page-first { background-position: -60px -184px; }
+.icon-page-prev { background-position: -88px -184px; }
+.icon-page-next { background-position: -115px -184px; }
+.icon-page-last { background-position: -137px -184px; }
+
+.icon-logout { width: 15px; height: 15px; background-position: -128px -7px; }
+.icon-edit { width: 21px; height: 21px; background-position: -159px -2px; }
+.icon-delete { background-position: -159px -30px; }
+.icon-view { background-position: -159px -59px; }
+.icon-good { background-position: -159px -88px; }
+.icon-return { background-position: -159px -117px; }
+.icon-add-role { background-position: -159px -145px; }
+.icon-remove-role { background-position: -159px -174px; }
+.icon-time { background-position: -159px -205px; }
+.icon-up { background-position: -190px -2px; }
+.icon-down { background-position: -190px -31px; }
+.icon-reply { background-position: -159px -118px; }
+
+.icon-push { width: 22px; height: 20px; background-position: -126px -150px; }
+.icon-add { width: 18px; height: 18px; background-position: -128px -93px; }
+.icon-search { width: 18px; height: 18px; background-position: -128px -64px; }
+.icon-output { width: 20px; height: 18px; background-position: -126px -34px; }
+.icon-upload-white { width: 22px; height: 20px; background-position: -126px -150px; }
+.icon-edit-white { width: 22px; height: 20px; background-position: -126px -121px; }

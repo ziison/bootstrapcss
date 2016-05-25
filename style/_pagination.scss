@@ -1,0 +1,41 @@
+/* PAGINATION */
+
+.pagination {
+	margin: 8px 0;
+}
+.pagination {
+	text-align: center;
+	ul {
+		display: inline-block;
+		li {
+			display: inline-block;
+		}
+		a {
+			display: block;			
+			padding: 6px 8px;
+			font-size: 12px;
+			line-height: 14px;
+			color: #999;
+			&:hover{
+				color: $primary-color;
+			}
+			i {
+				width: 9px;
+				height: 11px;
+				vertical-align: top;
+			}
+			&.active {
+				color: $primary-color;
+			}
+		}
+	}
+	.page-info {
+		position: absolute;
+		right: 10px;
+		top: 5px;
+		color: #999;
+		span {
+			color: $primary-color;
+		}
+	}
+}

@@ -1,0 +1,44 @@
+.menu {
+    dl {
+        max-height: 51px;
+        overflow: hidden;
+        border-top: 1px solid #242730;
+        border-bottom: 1px solid #4e515b; 
+        dt {
+            a {
+                display: block;
+                height: 51px;
+                line-height: 51px;
+                text-align: center;
+                color: #939393;
+                &:hover {
+                    background-color: #20242f;
+                }
+            }
+            
+            i {
+                margin-right: 5px;
+            }
+        }
+        &.active dt a {
+            color: #43d5ca;
+        }
+        dd a {
+            display: block;
+            line-height: 30px;
+            text-align: right;
+            padding-right: 48px;
+            &:hover {
+                color: #aaa;
+                background-color: #20242f;
+            }
+        }
+        dd a.active {
+            background-color: #2cb2a8;
+            color: #fff;
+        }
+        &.active {
+            max-height: 440px;
+        }
+    }
+}

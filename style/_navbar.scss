@@ -1,0 +1,21 @@
+.navbar{
+  padding-top: 16px;
+  li {
+    display: inline-block;
+    margin: 0 12px;
+    a {
+      display: block;
+      line-height: 25px;
+      padding: 0 14px;
+      border: 3px solid transparent;  
+      border-radius: 15px;    
+      overflow: hidden;
+      &:hover{
+        border-color: #56ad8a;
+      }
+    }
+    &.active a {
+      border-color: #56ad8a;
+    }
+  }
+}

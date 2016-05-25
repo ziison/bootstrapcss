@@ -1,0 +1,95 @@
+$btn-default-color:              #333 !default;
+$btn-default-bg:                 #fff !default;
+$btn-default-border:             #ccc !default;
+
+$btn-primary-color:              #fff !default;
+$btn-primary-bg:                 $primary-color !default;
+$btn-primary-border:             darken($btn-primary-bg, 5%) !default;
+
+$btn-success-color:              #fff !default;
+$btn-success-bg:                 $success-color !default;
+$btn-success-border:             darken($btn-success-bg, 5%) !default;
+
+$btn-warning-color:              #fff !default;
+$btn-warning-bg:                 $warning-color !default;
+$btn-warning-border:             darken($btn-warning-bg, 5%) !default;
+
+$btn-danger-color:               #fff !default;
+$btn-danger-bg:                  $danger-color !default;
+$btn-danger-border:              darken($btn-danger-bg, 5%) !default;
+
+.btn {
+  display: inline-block;
+  margin-bottom: 0;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle; 
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;  
+  border-radius: 4px;
+  touch-action: manipulation;
+  cursor: pointer;
+  user-select: none;
+}
+.btn:hover { text-decoration: none; }
+.btn.disabled,
+.btn[disabled] { cursor: not-allowed; opacity: 0.65; pointer-events: none; }
+
+
+@mixin button-variant($color, $background, $border) {
+  
+  color: $color;
+  background-color: $background;
+  border-color: $border;
+
+  &:hover {
+    color: $color;
+    background-color: darken($background, 10%);
+        border-color: darken($border, 12%);
+  }
+}
+
+.btn-default {
+  @include button-variant($btn-default-color, $btn-default-bg, $btn-default-border);
+}
+.btn-primary {
+  @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
+}
+.btn-success {
+  @include button-variant($btn-success-color, $btn-success-bg, $btn-success-border);
+}
+.btn-warning {
+  @include button-variant($btn-warning-color, $btn-warning-bg, $btn-warning-border);
+}
+.btn-danger {
+  @include button-variant($btn-danger-color, $btn-danger-bg, $btn-danger-border);
+}
+
+.btn-link {color: #337ab7; font-weight: normal; border-radius: 0; border-color: transparent; }
+.btn-link:hover {color: #23527c; text-decoration: underline; background-color: transparent; }
+
+.btn-lg { padding: 10px 16px; font-size: 18px; line-height: 1.3333333; border-radius: 6px; }
+.btn-sm { padding: 5px 10px; font-size: 12px; line-height: 1.5; border-radius: 3px; }
+.btn-xs { padding: 1px 5px; font-size: 12px; line-height: 1.5; border-radius: 3px; }
+
+.btn-block {display: block; width: 100%; }
+.btn-block + .btn-block {margin-top: 5px; }
+.btn.btn-light { background: transparent; color: #666; border-color: #666; }
+.btn.btn-light:hover { background-color: #e4e4e4; }
+.btn.btn-rounded {border-radius: 999px; }
+input[type="submit"].btn-block,
+input[type="reset"].btn-block,
+input[type="button"].btn-block {
+  width: 100%;
+}
+.confirm-btns {
+    text-align: center;
+    .btn {
+        padding: 3px 24px;
+        margin: 0 5px;
+    }
+}
